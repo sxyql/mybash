@@ -633,3 +633,7 @@ export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bi
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
+
+
+alias linutil='curl -fsSL https://christitus.com/linux | sh'
+alias linutil-dev='curl -fsSL https://christitus.com/linuxdev | sh'
