@@ -632,7 +632,6 @@ eval "$(zoxide init bash)"
 #Fix timeshift
 alias timeshift-launcher='sudo -E timeshift-launcher'
 
-
 ########
 #SET LANG
 export LANG=en_DK.UTF-8
@@ -644,6 +643,8 @@ alias linutil-dev='curl -fsSL https://christitus.com/linuxdev | sh'
 # Rload Hyprland
 alias hyprrl='hyprctl reload'
 
+#Fix flatpak desktop errors
+export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:/home/julian/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
 
 # Export LC ALL
 export LC_ALL=en_DK.UTF-8
